@@ -1,0 +1,9 @@
+{application,clickstart,
+             [{description,"clickstart"},
+              {vsn,"1"},
+              {modules,[clickstart,clickstart_app,clickstart_resource,
+                        clickstart_sup]},
+              {registered,[]},
+              {applications,[kernel,stdlib,inets,crypto,mochiweb,webmachine]},
+              {mod,{clickstart_app,[]}},
+              {env,[]}]}.
