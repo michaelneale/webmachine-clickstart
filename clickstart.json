@@ -1,16 +1,16 @@
 {
     "id": "webmachine",
     "name": "Webmachine hello world",
-    "source": "git://github.com/CloudBees-community/webmachine-clickstart.git",
-    "description": "Erlang awesomeness, now in your webapps",
-    "doc-url": "https://github.com/CloudBees-community/webmachine-clickstart/blob/master/README.md",
+    "source": "github",
+    "description": "Erlang awesomeness with Webmachine, now in your webapps",
+    "doc-url": "https://github.com/michaelneale/webmachine-clickstart/blob/master/README.md",
     "disabled": true,
     "runtime": {
         "type": "webmachine"
     },
     "build-with-jenkins": {
         "template": {
-            "type": "https://raw.github.com/CloudBees-community/webmachine-clickstart/master/config.xml"
+            "type": "https://raw.github.com/michaelneale/webmachine-clickstart/master/config.xml"
         }
     }
 }
