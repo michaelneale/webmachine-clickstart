@@ -71,8 +71,10 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>rm -rf target
+      <command>
+rm -rf target
 mkdir target
+make deps
 zip -r target/webmachine.zip .</command>
     </hudson.tasks.Shell>
   </builders>
