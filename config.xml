@@ -74,7 +74,7 @@
       <command>
 rm -rf target
 mkdir target
-make deps
+# make deps
 zip -r target/webmachine.zip .</command>
     </hudson.tasks.Shell>
   </builders>
