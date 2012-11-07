@@ -29,7 +29,7 @@ You can launch this on Cloudbees via a clickstart automatically, or follow the i
     cd THIS PROJECT
     make deps # download the shizzles needed 
     mkdir target
-    zip ./target/app.zip
+    zip -r ./target/app.zip *
     bees app:deploy MYAPP_ID -t webmachine target/app.zip 
 
 
