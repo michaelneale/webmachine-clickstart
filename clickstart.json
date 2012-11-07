@@ -1,11 +1,10 @@
 {
     "id": "webmachine",
-    "name": "Webmachine hello world",
+    "name": "Webmachine and Erlang",
     "source": "github",
-    "description": "Erlang awesomeness with Webmachine, now in your webapps",
+    "description": "Erlang with Webmachine from Basho, highly scalable webapps with continuous deployment",
     "doc-url": "https://github.com/michaelneale/webmachine-clickstart/blob/master/README.md",
-    "icon" : "https://secure.gravatar.com/avatar/ad362b896bde685c30da5569549cf531",
-    "disabled": true,
+    "icon" : "https://d3ko533tu1ozfq.cloudfront.net/clickstart/erlang.png",    
     "runtime": {
         "type": "webmachine"
     },
