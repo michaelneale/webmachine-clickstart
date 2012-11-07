@@ -1,6 +1,6 @@
 #  Webmachine clickstart
 
-This clickstart sets up a simple Hello World Webmachine app with continuous deployment
+This clickstart sets up a basic app with continuous deployment
 running on CloudBees.
 Webmachine, by basho, is a fantastically scalable web server which powers things like the Riak database.
 
@@ -9,7 +9,16 @@ Webmachine, by basho, is a fantastically scalable web server which powers things
 Launch this clickstart and glory could be yours too ! Use it as a building block if you like.
 You can launch this on Cloudbees via a clickstart automatically, or follow the instructions below. 
 
-# Deploying manually: 
+# Running this app locally
+
+0. Install Erlang and clone this repo
+1. cd into repo dir
+2. make && ./start.sh
+3. open a browser to localhost:8000
+4. If you make a change, run make again (in another shell) and it will reload
+
+
+# Deploying manually to CloudBees 
 
 
 ## To build and deploy this on CloudBees, follow those steps:
@@ -18,15 +27,9 @@ You can launch this on Cloudbees via a clickstart automatically, or follow the i
 
     git clone THIS PROJECT
     cd THIS PROJECT
-
     make deps # download the shizzles needed 
     mkdir target
     zip ./target/app.zip
     bees app:deploy MYAPP_ID -t webmachine target/app.zip 
 
 
-## To run this locally
-
-In the project directory, run the following, and then browse to localhost:8000
-
-    make && ./start.sh
